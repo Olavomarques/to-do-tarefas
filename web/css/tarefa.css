@@ -1,0 +1,81 @@
+main {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+main form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+main form input, main form select {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main form input:focus, main form select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+main form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+main form button:hover {
+    background-color: #004494;
+}
+
+#mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #28a745;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    main form {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    main form label {
+        font-size: 14px;
+    }
+
+    main form input, main form select {
+        font-size: 14px;
+    }
+
+    main form button {
+        font-size: 14px;
+    }
+}

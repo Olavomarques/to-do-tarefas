@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tarefa.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Gerenciamento de Tarefas</h1>
+        <nav>
+            <a href="cadastroUsuario.html">Cadastro de Usuários</a>
+            <a href="cadastroTarefa.html">Cadastro de Tarefas</a>
+            <a href="gerenciar.html">Gerenciar tarefas</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastro de Tarefas</h1>
+        <form id="forms">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" required />
+
+            <label for="setor">Setor</label>
+            <input type="text" id="setor" name="setor" required />
+
+            <label for="usuario">Usuário</label>
+            <input type="number" id="usuario" name="usuarioId" required />
+
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade" required>
+                <option value="">Selecione</option>
+                <option value="BAIXA">Baixa</option>
+                <option value="MEDIA">Média</option>
+                <option value="ALTA">Alta</option>
+            </select>
+
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+                <option value="">Selecione</option>
+                <option value="AFAZER">A fazer</option>
+                <option value="FAZENDO">Fazendo</option>
+                <option value="PRONTO">Pronto</option>
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <script src="js/tarefascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gerenciamentoTarefas.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gerenciamento de Tarefas</h1>
+        <nav>
+            <a href="cadastroUsuario.html">Cadastro de Usuários</a>
+            <a href="cadastroTarefa.html">Cadastro de Tarefas</a>
+            <a href="gerenciar.html">Gerenciar tarefas</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Tarefas</h1>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>A Fazer</th>
+                    <th>Fazendo</th>
+                    <th>Pronto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="a-fazer"></td>
+                    <td id="fazendo"></td>
+                    <td id="pronto"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="js/gerenciar.js"></script>
+</body>
+</html>
